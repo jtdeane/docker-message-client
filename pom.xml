@@ -12,9 +12,9 @@
 
 
 	<!-- =========================Project Details=========================== -->
-	<description>Docker Client</description>
+	<description>Docker Message Client</description>
 	<groupId>ws.cogito.test</groupId>
-	<artifactId>docker-client</artifactId>
+	<artifactId>docker-message-client</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<url>http://www.cogito.ws</url>
