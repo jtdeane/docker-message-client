@@ -1,0 +1,36 @@
+Enterprise Messaging Fundamentals
+
+DOCKER COMMANDS
+
+#Setup & Start Docker Portainer (not windows -v /var/run/docker.sock:/var/run/docker.sock)
+docker volume create portainer_data
+
+docker run -d -p 9898:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
+#replace
+build: .
+
+#with
+image: jtdeane/magic-supplies:latest
+
+docker-compose build
+
+docker-compose up
+
+http://localhost:8080/info
+
+http://localhost:8090/hawtio
+
+http://localhost:9999/message/test
+
+http://localhost:9999/message/magic.order
+
+http://localhost:9999/message/magic.orders
+
+http://localhost:9999/message/magic.alerts
+
+http://localhost:9999/message/emagic.orders
+
+docker logs -f {magic-supplies-container id}
+
+http://localhost:9999/message/unique.orders
