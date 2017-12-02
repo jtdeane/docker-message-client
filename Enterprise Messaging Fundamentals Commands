@@ -7,10 +7,9 @@ docker volume create portainer_data
 
 docker run -d -p 9898:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 
-#replace
+#replace magic supplies build
 build: .
-
-#with
+#with magic supplies image
 image: jtdeane/magic-supplies:latest
 
 docker-compose build
@@ -20,6 +19,11 @@ docker-compose up
 http://localhost:8080/info
 
 http://localhost:8090/hawtio
+
+#replace Docker Message Client build
+build: .
+#with Docker Message Client image
+image: jtdeane/docker-message-client:latest
 
 http://localhost:9999/message/test
 
