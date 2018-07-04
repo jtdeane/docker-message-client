@@ -16,7 +16,7 @@ docker-compose build
 
 docker-compose up
 
-http://localhost:8080/info
+http://localhost:8080/actuator/info
 
 http://localhost:8090/hawtio
 
